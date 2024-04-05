@@ -136,11 +136,11 @@ function create_backup() {
 
     mkdir -p "${LOCAL_BACKUP_PATH}"
 
-    rconcli broadcast "$(get_time) Saving in 5 seconds..."
-    sleep 5
+    # rconcli broadcast "$(get_time) Saving in 5 seconds..."
+    # sleep 5
     rconcli broadcast "$(get_time) Saving world..."
     rconcli save
-    rconcli broadcast "$(get_time) Saving done"
+    # rconcli broadcast "$(get_time) Saving done"
     sleep 15
     rconcli broadcast "$(get_time) Creating backup..."
 
